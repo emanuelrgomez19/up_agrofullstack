@@ -13,6 +13,11 @@ Base = declarative_base()
 class Usuario(object):
     """description of class"""
     __tablename__ = 'usuario'
-    idUsuario = Column(int, prymary_key=true)
+    idUsuario = Column(int, prymary_key=True)
+    Direccion = Column(String(100))
+    Numero = Column(String(10))
+    UserName = Column(String(10), nullable=False)
+    Password = Column(String(10), nullable=False)
+    Mail = Column(String(10), nullable=False)
 
 
